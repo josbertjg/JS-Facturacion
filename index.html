@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./index.js"></script>
+    <title>Facturación</title>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>SISTEMA DE FACTURACIÓN</h1>
+        </div>
+    </header>
+    <main>
+        <!-- PIDIENDO LOS DATOS AL USUARIO -->
+        <section id="usuario">
+            <h3>Datos del Cliente</h3><br>
+            Nombre: <input type="text" id="nombre"><br>
+            RIF: <input type="text" id="rif"><br>
+            Dirección: <input type="text" id="direccion"><br>
+            Correo: <input type="text" id="correo">
+        </section>
+        <!-- PIDIENDO LOS DATOS DEL ARTICULO -->
+        <form action="" name="form_articulos">
+            <h3>Datos del Artículo</h3>
+            Código: <input type="text" name="codigo"><br>
+            Arituclo: <input type="text" name="articulo"><br>
+            Cantidad: <input type="text" name="cantidad" id=""><br>
+            Precio: <input type="number" name="precio" id=""><br>
+            SubTotal: <input type="text" name="subtotal">
+            <input name="btn_agregar" type="button" value="Agregar">
+        </form>
+
+        <h3>--FACTURA--</h3>
+        <table id="tabla_fact">
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Precio</th>
+                    <th>Cantidad</th>
+                    <th>Sub Total del Artículo</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+
+        <section id="last-section">
+            <div>
+                Sub Total <input type="text" id="subtotal" readonly>
+            </div>
+            <div>
+                IVA (16%) <input type="text" id="iva" readonly>
+            </div>
+            <div>
+                Monto Total <input type="text" id="total" readonly>
+            </div>
+        </section>
+        <div>
+            <input type="button" id="terminar" value="Terminar">
+        </div>
+    </main>
+</body>
+</html>

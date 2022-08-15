@@ -1,0 +1,76 @@
+/* BODY */
+body{
+    margin: 0;
+    padding: 0%;
+}
+/* HEADER */
+header div{
+    border-top: 5px orange solid;
+    border-bottom: 5px orange solid;
+    margin: 2rem 0;
+}
+header div h1{
+    margin: 0;
+    text-align: center;
+    color: #7492CE;
+}
+/* MODIFICANDO TODOS LOS INPUTS */
+input{
+    margin-bottom: 1rem;
+    border-radius: 10px;
+}
+/* MAIN */
+main{
+    background-color: #e2e2e2;
+    margin: 0 10rem 10rem 10rem;
+    border: 1px black solid;
+    border-radius: 10px;
+    padding: 1rem;
+}
+#usuario h3{
+    margin: 0%;
+}
+/* FORMULARIO */
+form{
+    border: 1px black solid;
+    padding: 1rem;
+    position: relative;
+}
+/* BOTON DE AGREGAR */
+input[name*="btn_agregar"]{
+    position: absolute;
+    top: 4.5rem;
+    left: 20rem;
+}
+/* TABLA */
+table{
+    border: 1px black solid;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+th{
+    border: 1px black solid;
+}
+tr{
+    border: 1px black solid;
+}
+td{
+    border: 1px black solid;
+}
+/* ULTIMO SECTION */
+#last-section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    padding-right: 6rem;
+}
+/* ALINEANDO EL BOTON TERMINAR */
+#last-section + div{
+    display: flex;
+    justify-content: end;
+}
+input:hover:not(input[id="total"],input[id="subtotal"],input[id="iva"],input[name="subtotal"],input[name="precio"]){
+    border-color: blue;
+}
